@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace Calculator
+namespace StudentManagement
 {
     class Program
     {
         static void Main()
         {
-            Console.WriteLine("Hello World")
         }
     }
 }

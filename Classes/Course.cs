@@ -1,6 +1,6 @@
 using System;
 
-namespace Calculator
+namespace StudentManagement
 {
     public class Course
     {
