@@ -7,11 +7,33 @@ namespace StudentManagement
     {
         static void Main()
         {
-            Student student1 = new Student(1801222,"John");
-            Course math1 = new Course("Math","CS17",3);
-            student1.EnrolInCourse(math1);
-            student1.DisplayEnrolledCourse();
-            Console.WriteLine(student1.StudentId);
+           
+           Console.Clear();
+           while(true)
+           {
+                Console.WriteLine("Welcome to our Student Course Enrollement System!\n");
+                Console.WriteLine("________******** Menu *********__________\n");
+                Console.WriteLine("1. Enroll Course \n2. Withdraw the course \n3. View enrolled course\n4. Exit\n");
+                
+                Console.Write("Enter your choice: ");
+               string choice = Console.ReadLine();
+                    
+                switch(choice)
+                {
+                   case "1": Console.WriteLine("Coming soon !"); break;
+                   case "2": Console.WriteLine("Coming soon !"); break;
+                   case "3": Console.WriteLine("Coming soon !"); break;
+                    case "4":
+                    Console.WriteLine("Exiting the program. Goodbye!");
+                    Environment.Exit(0);
+                    break;
+                    default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
+                    break;
+                }
+           }
         }
     }
 }
