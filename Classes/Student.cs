@@ -1,18 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
-public class Student
+namespace StudentManagement
 {
-    internal class Student
+    public class Student
     {
         public int StudentId { get; set; }
         public string Name { get; set; }
-
         public List<Course> CoursesEnrolled { get; set; }
 
-        public Student(string studentId, string name)
+
+        
+
+        public Student(int studentId, string name)
         {
             Name = name;
-            string student = studentId;
+            StudentId = studentId;
             CoursesEnrolled = new List<Course>();
         }
 
